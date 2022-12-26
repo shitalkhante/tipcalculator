@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div>
+        <h3>SPLI<br/>TTER</h3>
+        <main>
+            <div class="left">
+                <div>
+                    <h5>Bill</h5>
+                    <input type="number" style="width: 100%;" />
+                </div>
+                <div>
+                    <h5>Select Tip %</h5>
+                    <div style="display: grid;gap: 10px;">
+                        <input type="button" value="5%" class="btn-percent" style="grid-column-start: 1;grid-column-end: 2;grid-row-start: 1;grid-row-end: 2;"/>
+                        <input type="button" value="10%" class="btn-percent" style="grid-column-start: 2;grid-column-end: 3;grid-row-start: 1;grid-row-end: 2;"/>
+                        <input type="button" value="15%" class="btn-percent" style="grid-column-start: 3;grid-column-end: 4;grid-row-start: 1;grid-row-end: 2;"/>
+                        <input type="button" value="25%" class="btn-percent" style="grid-column-start: 1;grid-column-end: 2;grid-row-start: 2;grid-row-end: 3;"/>
+                        <input type="button" value="50%" class="btn-percent" style="grid-column-start: 2;grid-column-end: 3;grid-row-start: 2;grid-row-end: 3;"/>
+                        <input type="number" placeholder="Custom" maxlength="2" class="btn-percent" style="grid-column-start: 3;grid-column-end: 4;grid-row-start: 2;grid-row-end: 3; background-color:rgb(192, 232, 231);color: rgb(26, 52, 51);width:60px;"/>
+                    </div>
+                </div>
+                <div>
+                    <h5>Number of people</h5>
+                    <input type="number" style="width: 100%;"/>
+                </div>
+            </div>
+            <div class="right">
+                <div style="display: flex;align-items: center;justify-content: space-around;">
+                    <span class="right-heading">Tip Amount<br/>/person</span>
+                    <label>$0.00</label>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-around;">
+                    <span class="right-heading">Total<br/>/person</span>
+                    <label>$0.00</label>
+                </div>
+                <button style="background-color: rgb(85, 125, 123);">Reset</button>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
