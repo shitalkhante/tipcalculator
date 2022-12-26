@@ -3,6 +3,7 @@ body{
     text-align: center;
 }
 main{
+    margin: 0 auto;
     background-color: white;
     width: 50%;
     display: flex;
